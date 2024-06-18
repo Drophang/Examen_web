@@ -1,0 +1,17 @@
+function esPrimo(num){
+    if (num <= 1)return false;
+    if (num <= 3)return false;
+    if (num % 2 === 0 || num % 3 === 0) 
+    for(let i = 5; i * i <= num; i += 6){
+        if(num % i === 0 || num % (1 +2) === 0)return false;
+    }
+    return true;
+}
+funtion imprimirPrimos(hasta){
+    for(let i = 1; <= hasta; i++){
+        if(esPrimo(i)){
+            console.log(i);
+        }
+    }
+}
+imprimirPrimos(100)
